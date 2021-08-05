@@ -10,5 +10,9 @@
         "psr-4": {
             "NamelessCoder\\AsyncReferenceIndexing\\": "Classes/"
         }
+    },
+    "replace": {
+        "asynchronous_reference_indexing": "self.version",
+        "typo3-ter/asynchronous_reference_indexing": "self.version"
     }
 }

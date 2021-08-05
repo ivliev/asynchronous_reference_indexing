@@ -21,3 +21,9 @@ $dispatcher->connect(
     \NamelessCoder\AsyncReferenceIndexing\Slot\ReferenceIndexSlot::class,
     'shouldExcludeTableFromReferenceIndex'
 );
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['NamelessCoder\\AsyncReferenceIndexing\\Task\\AsyncReferenceIndexTask'] = array(
+    'extension' => 'asynchronous_reference_indexing',
+    'title' => 'Asynchronous Reference Indexing',
+    'description' => 'Delegates reference indexing to a scheduler',
+);
